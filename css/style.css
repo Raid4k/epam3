@@ -204,8 +204,100 @@
 }
 
 .slider {
-  width: 100vw;
   height: 440px;
   margin: 0 auto;
   background: #f6f3ec;
+}
+
+.subscribe {
+  background: #ededed;
+  overflow: hidden;
+}
+
+.mail {
+  padding: 14px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding-left: 0;
+}
+
+.mail span {
+  color: #6b6b6b;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.plus {
+  background: url(../img/plus.png) no-repeat 10px 7px #fd926d;
+  padding: 6px 16px;
+  right: -15px;
+  top: 14px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  border-bottom: 4px solid #dd6b44;
+}
+
+.plus:hover {
+  opacity: .65;
+}
+
+.your-mail {
+  padding: 5px;
+  color: #9f9f9f;
+  font-size: 12px;
+}
+
+.social {
+  float: right;
+}
+
+.social ul {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.social_list:hover {
+  opacity: .65;
+}
+
+.social ul li {
+  padding: 13px;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.social ul li a {
+  height: 100%;
+  display: block;
+}
+
+.light {
+  background-color: #f7f7f7;
+}
+
+.top-fb {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/custom.png) no-repeat -62px -26px;
+}
+
+.top-tw {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/custom.png) no-repeat -8px -34px;
+}
+
+.top-pn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/custom.png) no-repeat -8px -5px;
 }

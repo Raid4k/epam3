@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'helvetica-ltcn';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/HelveticaNeueLTStd-LtCn.otf');
+
+}
+
+@font-face {
+    font-family: 'helvetica-hvcn';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/HelveticaNeueLTStd-HvCn.otf');
+
+}
+@font-face {
+    font-family: 'helvetica-th';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/HelveticaNeueLTStd-Th.otf');
+
+}
+
+@font-face {
+    font-family: 'Luxury';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/LuxuryRoyaleJF.ttf');
+
+}

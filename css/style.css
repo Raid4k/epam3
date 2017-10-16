@@ -93,6 +93,10 @@
   margin-top: 15px;
 }
 
+.logo:hover {
+  opacity: .65;
+}
+
 .header__bottom-right {
   float: right;
   width: 65%;
@@ -300,4 +304,9 @@
   width: 30px;
   height: 30px;
   background: url(../img/custom.png) no-repeat -8px -5px;
+}
+
+.banner-wrap {
+  height: 400px;
+  background: grey;
 }

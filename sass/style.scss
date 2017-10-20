@@ -5,20 +5,24 @@
     text-decoration: none;
     color: #fff;
 }
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .header-top {
     background: #000;
     text-transform: uppercase;
     line-height: 8px;
 }
+
 .header-top-content {
     display: flex;
     justify-content: space-between;
 }
+
 .header-top-right ul {
     display: flex;
     list-style: none;
@@ -29,9 +33,11 @@
         padding: 11px 20px;
     }
 }
+
 .header-top-right ul li a:hover {
     color: #fd926d;
 }
+
 .header-top-right ul li {
     position: relative;
     &:before {
@@ -53,6 +59,7 @@
         top: 0;
     }
 }
+
 .money a {
     margin-right: 5px;
     &:after {
@@ -66,6 +73,7 @@
         background: url(../img/icons.png) -50px -5px;
     }
 }
+
 .user a {
     margin-left: 15px;
     &:before {
@@ -79,6 +87,7 @@
         background: url(../img/icons.png) -5px -5px;
     }
 }
+
 .search a:before {
     content: '';
     width: 20px;
@@ -88,6 +97,7 @@
     top: 5px;
     background: url(../img/icons.png) -183px -5px;
 }
+
 .header-bottom-content {
     display: flex;
     justify-content: space-between;
@@ -95,23 +105,29 @@
     flex-wrap: wrap;
     margin-top: 50px;
 }
+
 .logo {}
+
 .nav-cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .navigation {}
+
 .navigation ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .navigation ul li {
     margin-right: 40px;
 }
+
 .navigation ul li a {
     color: #000000;
     font-size: 16px;
@@ -129,10 +145,12 @@
         color: #fd926d;
     }
 }
+
 .cart {
     width: 216px;
     border: 1px solid #d6d6d6;
 }
+
 .cart ul {
     list-style: none;
     margin: 0;
@@ -183,11 +201,13 @@
         }
     }
 }
+
 .slider {
     margin-top: 20px;
     width: 100%;
-   
+
 }
+
 .slider-content {
     overflow: hidden;
     position: relative;
@@ -205,6 +225,7 @@
         }
     }
 }
+
 .prev {
     height: 117px;
     position: absolute;
@@ -231,6 +252,7 @@
         transform: scaleX(-1);
     }
 }
+
 .next {
     height: 117px;
     position: absolute;
@@ -256,11 +278,12 @@
         background-position: -29px -5px;
     }
 }
+
 .slider-btn {
     cursor: pointer;
     position: absolute;
     top: 70%;
-    left: 25%;
+    left: 23%;
     font-family: "Arial", sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -284,17 +307,20 @@
         background: url(../img/icons.png) -50px -5px;
     }
 }
+
 .slider-dots {
     background-color: #fff;
     form {
         text-align: center;
     }
 }
+
 .slider-dots input[type="radio"] {
     visibility: hidden;
     border: 0;
     margin: 32px 8px;
 }
+
 .slider-dots label + input[type="radio"]:after {
     content: '';
     visibility: visible;
@@ -306,27 +332,30 @@
     background-color: #867a76;
     cursor: pointer;
 }
+
 .slider-dots label + input[type="radio"]:hover:after,
 .slider-dots label + input[type="radio"]:checked:after {
     background-color: #fd926d;
 }
+
 .main-contacts {
     background-color: #ededed;
-    margin: 0;
-    padding: 0;
-    
+    margin-bottom: 30px;
+
 }
+
 .contacts-wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .subscribe {
     line-height: 0;
     padding-top: 13px;
     display: flex;
     h3 {
-        
+
         font-size: 12px;
         font-weight: 500;
         color: #6b6b6b;
@@ -360,74 +389,120 @@
         }
     }
 }
-.find-us{
-    display:flex;
+
+.find-us {
+    display: flex;
     align-items: center;
-    h3{
+    h3 {
         font-size: 12px;
         font-weight: 500;
         color: #6b6b6b;
         margin-right: 10px;
     }
-    ul{display:flex;
+    ul {
+        display: flex;
         list-style: none;
-        padding:0;
-        margin:0;
-        li{ position: relative;
-            width:55px;
-     height: 55px;
-           
-            a{
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            width: 55px;
+            height: 55px;
+
+            a {
                 display: block;
-         width: 100%;
-         height: 100%;
-                &:hover{
+                height: 100%;
+                width: 100%;
+                &:hover {
                     opacity: 0.7;
                 }
             }
         }
-        
+
     }
-   
+
 }
- .fb { background: #f7f7f7;
-     a{
-         
-         &:after{
-     content: '';
-     position: absolute;
-     top:30%;
-             left:16px;
-     width: 23px;
-     height: 23px;
-     background: url(../img/social_find_us.png) 0 -3px ;
-             
-             }
-         }
+
+.fb {
+    background: #f7f7f7;
+    a {
+        width: 1px;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30%;
+            left: 16px;
+            width: 23px;
+            height: 23px;
+            background: url(../img/social_find_us.png) 0 -3px;
+
+        }
     }
+}
+
 .tw {
-     a{
-         &:after{
-     content: '';
-     position: absolute;
-     top:30%;
-             left:16px;
-     width: 23px;
-     height: 23px;
-     background: url(../img/social_find_us.png) -25px -2px ;
-             }
-         }
+    a {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30%;
+            left: 16px;
+            width: 23px;
+            height: 23px;
+            background: url(../img/social_find_us.png) -25px -2px;
+        }
     }
-.pi {background: #f7f7f7;
-     a{
-         &:after{
-     content: '';
-     position: absolute;
-             top:30%;
-             left:16px;
-     width: 23px;
-     height: 23px;
-     background: url(../img/social_find_us.png) -219px -5px ;
-             }
-         }
+}
+
+.pi {
+    background: #f7f7f7;
+    a {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30%;
+            left: 16px;
+            width: 23px;
+            height: 23px;
+            background: url(../img/social_find_us.png) -219px -5px;
+        }
     }
+}
+.banner-conent {
+	 height: 100%;
+    width: 100%;
+    
+}
+.banner-img {
+    height: 100%;
+    width: 100%;
+     position:relative;
+    overflow:hidden;
+    img{
+    width: 100%;
+    display: block;
+        }
+}
+.banner-btn {
+    cursor: pointer;
+    right:13%;
+    bottom: 8%;
+	width: 98px;
+    height: 30px;
+    position: absolute;
+    border: none;
+    background-color: #4fafa0;
+    font-size: 12px;
+    text-align: left;
+    padding: 9px 7px;
+    text-transform: uppercase;
+    &:after{
+            content: '';
+    width: 5px;
+    height: 8px;
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    background: url(../img/icons.png) -50px -5px;
+    }
+}

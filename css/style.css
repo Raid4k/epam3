@@ -300,7 +300,7 @@
   cursor: pointer;
   position: absolute;
   top: 70%;
-  left: 25%;
+  left: 23%;
   font-family: "Arial", sans-serif;
   font-weight: 100;
   font-size: 16px;
@@ -360,8 +360,7 @@
 
 .main-contacts {
   background-color: #ededed;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-wrap {
@@ -441,8 +440,8 @@
 
 .find-us ul li a {
   display: block;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .find-us ul li a:hover {
@@ -451,6 +450,10 @@
 
 .fb {
   background: #f7f7f7;
+}
+
+.fb a {
+  width: 1px;
 }
 
 .fb a:after {
@@ -485,4 +488,46 @@
   width: 23px;
   height: 23px;
   background: url(../img/social_find_us.png) -219px -5px;
+}
+
+.banner-conent {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img img {
+  width: 100%;
+  display: block;
+}
+
+.banner-btn {
+  cursor: pointer;
+  right: 13%;
+  bottom: 8%;
+  width: 98px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  background-color: #4fafa0;
+  font-size: 12px;
+  text-align: left;
+  padding: 9px 7px;
+  text-transform: uppercase;
+}
+
+.banner-btn:after {
+  content: '';
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  right: 9px;
+  top: 11px;
+  background: url(../img/icons.png) -50px -5px;
 }

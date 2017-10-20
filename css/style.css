@@ -216,7 +216,6 @@
 .slider {
   margin-top: 20px;
   width: 100%;
-  min-height: 440px;
 }
 
 .slider-content {
@@ -360,5 +359,130 @@
 }
 
 .main-contacts {
-  background: grey;
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subscribe {
+  line-height: 0;
+  padding-top: 13px;
+  display: flex;
+}
+
+.subscribe h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b6b6b;
+  margin-right: 5px;
+  padding: 1px;
+}
+
+.subscribe form {
+  vertical-align: top;
+  font-size: 0;
+  height: 28px;
+  margin: 0;
+}
+
+.subscribe form input {
+  border: none;
+  padding: 7px 8px;
+  vertical-align: top;
+}
+
+.subscribe form input[type="email"] {
+  font-size: 12px;
+  width: 131px;
+  font-style: italic;
+  color: #9f9f9f;
+}
+
+.subscribe form input[type="submit"] {
+  height: 28px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 8px;
+  border-bottom: 3px solid #dd6b44;
+  background: #fd926d;
+}
+
+.find-us {
+  display: flex;
+  align-items: center;
+}
+
+.find-us h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b6b6b;
+  margin-right: 10px;
+}
+
+.find-us ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.find-us ul li {
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.find-us ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.find-us ul li a:hover {
+  opacity: 0.7;
+}
+
+.fb {
+  background: #f7f7f7;
+}
+
+.fb a:after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 16px;
+  width: 23px;
+  height: 23px;
+  background: url(../img/social_find_us.png) 0 -3px;
+}
+
+.tw a:after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 16px;
+  width: 23px;
+  height: 23px;
+  background: url(../img/social_find_us.png) -25px -2px;
+}
+
+.pi {
+  background: #f7f7f7;
+}
+
+.pi a:after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 16px;
+  width: 23px;
+  height: 23px;
+  background: url(../img/social_find_us.png) -219px -5px;
 }

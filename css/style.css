@@ -665,6 +665,9 @@
 
 .shop-item:hover {
   transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -700,6 +703,9 @@
 
 .nohover {
   transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -787,4 +793,57 @@
   height: 50px;
   width: 50px;
   background: url(../img/sale.jpg) no-repeat;
+}
+
+.clearance {
+  margin-top: 30px;
+}
+
+.clearance-content {
+  text-align: center;
+  position: relative;
+}
+
+.clearance-content img {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  background: #fff;
+}
+
+.clearance-content:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  display: block;
+  bottom: 50%;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.shop-clearance {
+  background: #fff;
+  text-align: center;
+}
+
+.shop-clearance ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+.shop-clearance ul li {
+  width: 30%;
+  margin: 0 15px;
+}
+
+.shop-clearance ul li:last-child {
+  margin-right: 0px;
+}
+
+.shop-clearance ul li:first-child {
+  margin-left: 0px;
 }

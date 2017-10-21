@@ -505,7 +505,6 @@
 }
 
 .shop-nav {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -558,7 +557,6 @@
             position: relative;
             width: 47px;
             height: 47px;
-
             &:first-child a {
                 &:hover {
                     background: #fd926d;
@@ -571,7 +569,6 @@
                         height: 27px;
                         background: url(../img/icons.png) -135px -5px;
                     }
-
                 }
                 &:after {
                     content: '';
@@ -595,7 +592,6 @@
                     height: 27px;
                     background: url(../img/icons.png) -135px -5px;
                 }
-
             }
             a {
                 display: block;
@@ -626,10 +622,52 @@
     overflow: hidden;
     text-align: center;
     position: relative;
-    &:hover{
-       transform: scale(1.04);
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    
+    &:hover {
+        transform: scale(1.04);
+        -webkit-transform: scale(1.04);
+        -moz-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        &:after {
+            position: absolute;
+            content: '';
+            top: 35%;
+            left: 50%;
+            margin-left: -16px;
+            margin-top: -15px;
+            background-image: url(../img/icons.png);
+            background-repeat: no-repeat;
+            background-position: -65px -5px;
+            width: 30px;
+            height: 30px;
+        }
+        &:before {
+            position: absolute;
+            content: 'SHOP IT';
+            color: #fff;
+            top: 35%;
+            left: 50%;
+            margin-left: -67px;
+            margin-top: -58px;
+            width: 134px;
+            height: 134px;
+            background-color: #3d3d3d;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 175px;
+        }
+    }
+}
+
+.nohover {
+    transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop-item-nohover {
     &:after {
         position: absolute;
         content: '';
@@ -642,7 +680,6 @@
         background-position: -65px -5px;
         width: 30px;
         height: 30px;
-       
     }
     &:before {
         position: absolute;
@@ -658,59 +695,15 @@
         border-radius: 50%;
         font-size: 12px;
         line-height: 175px;
-        
-    }
-        }
-}
-.nohover {
-	transform: scale(1.04);
-     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.shop-item-nohover {
-    
-	&:after {
-        position: absolute;
-        content: '';
-        top: 35%;
-        left: 50%;
-        margin-left: -16px;
-        margin-top: -15px;
-        background-image: url(../img/icons.png);
-        background-repeat: no-repeat;
-        background-position: -65px -5px;
-        width: 30px;
-        height: 30px;
-        
-       
-    }
-    &:before {
-        position: absolute;
-        content: 'SHOP IT';
-        color: #fff;
-        top: 35%;
-        left: 50%;
-        margin-left: -67px;
-        margin-top: -58px;
-        width: 134px;
-        height: 134px;
-        background-color: #3d3d3d;
-        border-radius: 50%;
-        font-size: 12px;
-        line-height: 175px;
-       
-        
     }
 }
-.shop-image {
-   
-    img {
 
+.shop-image {
+    img {
         width: 100%;
         height: auto;
         display: block;
-        
     }
-
 }
 
 .shop-item-info {
@@ -758,5 +751,52 @@
         height: 50px;
         width: 50px;
         background: url(../img/sale.jpg) no-repeat;
-    } 
+    }
+}
+.clearance {
+	margin-top: 30px;
+}
+ .clearance-content {
+   text-align: center;
+      position: relative;
+     img{
+         position: relative;
+         z-index: 2;
+         padding:0 20px;
+         background: #fff;
+        
+     }
+     &:before{
+         content: '';
+         z-index: 1;
+         position:absolute;
+         height: 0;
+         width: 100%;
+         display: block;
+         bottom: 50%;
+         border-bottom: 1px solid #d8d8d8;
+         
+     }
+}
+.shop-clearance{
+  background: #fff;
+    text-align: center;
+    ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 30px 0;
+    justify-content: space-between;
+        li{
+            width:30%;
+            margin: 0 15px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:first-child{
+               margin-left: 0px ; 
+            }
+   
+        }
+    }
 }

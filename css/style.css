@@ -11,7 +11,7 @@ body {
   height: 100%;
 }
 
-main {
+.main-wrapper {
   min-height: calc(100vh - 276px);
 }
 
@@ -825,14 +825,12 @@ main {
 
 .clearance-content img {
   position: relative;
-  z-index: 2;
   padding: 0 20px;
   background: #fff;
 }
 
 .clearance-content:before {
   content: '';
-  z-index: 1;
   position: absolute;
   height: 0;
   width: 100%;
@@ -883,12 +881,10 @@ main {
   text-transform: uppercase;
   background-color: white;
   padding: 0 18px;
-  z-index: 4;
 }
 
 .brands-content:before {
   content: '';
-  z-index: 3;
   position: absolute;
   height: 0;
   width: 100%;
@@ -1228,6 +1224,11 @@ main {
   display: none;
 }
 
+.off-canvas,
+.nav-trigger {
+  display: none;
+}
+
 /*MEDIA QUERY 768px*/
 @media screen and (max-width: 768px) {
   .navigation {
@@ -1281,7 +1282,7 @@ main {
     list-style: none;
     text-align: left;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     display: none;
     opacity: .4;
     left: 0;
@@ -1637,8 +1638,7 @@ main {
   .brands,
   .about,
   .payment,
-  .footer-top,
-  .footer-bot-wrap ul {
+  .footer-top {
     display: none;
   }
   .footer-bot {
@@ -1647,11 +1647,80 @@ main {
   .footer-bot-wrap {
     justify-content: flex-end;
   }
-  .footer-bot-wrap span, .footer-bot-wrap a {
+  .footer-bot-wrap span,
+  .footer-bot-wrap a {
     font-size: 24px;
     line-height: 24px;
   }
   .footer-bot-wrap a {
     display: inline-block;
+  }
+  .footer-bot-wrap ul {
+    display: none;
+  }
+  .main-wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  .off-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #111;
+  }
+  .nav-item a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-item a:hover {
+    color: #fd926d;
+  }
+  .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  label[for="nav-trigger"] {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  label[for="nav-trigger"]:after {
+    content: '☰';
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .nav-trigger + label,
+  .main-wrapper {
+    transition: left 0.2s;
+  }
+  .nav-trigger:checked ~ .main-wrapper {
+    left: 180px;
+  }
+  body {
+    overflow-x: hidden !important;
   }
 }

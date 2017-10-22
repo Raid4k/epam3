@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,228 +9,142 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
 </head>
+
 <body>
-    <header>
-        <div class="header">
-            <div class="header-top">
-                <div class="wrapper">
-                    <div class="header-top-content">
-                        <div class="header-top-left">
-                            <p>Custom care: 888-23-4567</p>
+    <ul class="off-canvas">
+        <li class="nav-item"><a href="#">Privacy & Cookies</a></li>
+        <li class="nav-item"><a href="#">Terms & Conditions</a></li>
+        <li class="nav-item"><a href="#">Accessibility</a></li>
+        <li class="nav-item"><a href="#">Store Directory</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+    </ul>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <div class="main-wrapper">
+        <header>
+            <div class="header">
+                <div class="header-top">
+                    <div class="wrapper">
+                        <div class="header-top-content">
+                            <div class="header-top-left">
+                                <p>Custom care: 888-23-4567</p>
+                            </div>
+                            <div class="header-top-right">
+                                <ul>
+                                    <li class="money"><a href="#">$ US</a></li>
+                                    <li class="user"><a href="#">My Account</a></li>
+                                    <li class="search"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="header-top-right">
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="wrapper">
+                        <div class="header-bottom-content">
+                            <div class="logo">
+                                <a href="#" class="logo-img">
+                                    <picture>
+                                        <source srcset="img/logo640.png" media="(max-width: 640px)">
+                                        <img src="img/logo.png" alt="logo">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="nav-cart">
+                                <nav class="navigation dropdown">
+                                    <input type="checkbox" id="checkbox-toggle">
+                                    <label for="checkbox-toggle">Menu</label>
+                                    <ul class="h-top-menu">
+                                        <li><a href="#">new</a></li>
+                                        <li><a href="#">designers</a></li>
+                                        <li><a href="#">women</a></li>
+                                        <li><a href="#">men</a></li>
+                                        <li><a href="#">clearence</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="cart">
+                                    <ul>
+                                        <li><a href="#">Your cart</a></li>
+                                        <li class="cart-items"><span>0 items</span> | <span>$ 0</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <div class="slider-content">
+                    <ul>
+                        <li class="slide">
+                            <img src="img/slider.jpg" alt="123">
+                            <a href="#" class="next">next</a>
+                            <a href="#" class="prev">prev</a>
+                            <button class="slider-btn btn">shop now</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider-dots">
+                    <form action="#">
+                        <label for="radio1"></label><input id="radio1" type="radio" name="o">
+                        <label for="radio2"></label><input id="radio2" type="radio" name="o" checked>
+                        <label for="radio3"></label><input id="radio3" type="radio" name="o">
+                        <label for="radio4"></label><input id="radio4" type="radio" name="o">
+                        <label for="radio5"></label><input id="radio5" type="radio" name="o">
+                    </form>
+                </div>
+            </section>
+            <section class="main-contacts">
+                <div class="wrapper">
+                    <div class="contacts-wrap">
+                        <div class="subscribe">
+                            <h3>Stay updated</h3>
+                            <form action="#">
+                                <input type="email" placeholder="Your email address">
+                                <input type="submit" value="+">
+                            </form>
+                        </div>
+                        <div class="find-us">
+                            <h3>Find us here</h3>
                             <ul>
-                                <li class="money"><a href="#">$ US</a></li>
-                                <li class="user"><a href="#">My Account</a></li>
-                                <li class="search"><a href="#"></a></li>
+                                <li class="fb"><a href="#"></a></li>
+                                <li class="tw"><a href="#"></a></li>
+                                <li class="pi"><a href="#"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header-bottom">
+            </section>
+            <section class="banners">
                 <div class="wrapper">
-                    <div class="header-bottom-content">
-                        <div class="logo">
-                            <a href="#" class="logo-img"><picture>
-                            <source srcset="img/logo640.png" media="(max-width: 640px)">
-                            <img src="img/logo.png" alt="logo">
-                            </picture></a>
+                    <div class="banner-img">
+                        <img src="img/banner.jpg" alt="33">
+                        <button class="banner-btn">shop now</button>
+                    </div>
+                </div>
+            </section>
+            <section class="shop">
+                <div class="wrapper">
+                    <div class="shop-nav">
+                        <div class="left-nav">
+                            <ul>
+                                <li><a href="#">what’s hot?</a></li>
+                                <li><a href="#">designers</a></li>
+                                <li><a href="#">featured</a></li>
+                                <li><a href="#">latest</a></li>
+                            </ul>
                         </div>
-                        <div class="nav-cart">
-                            <nav class="navigation dropdown">
-                                <input type="checkbox" id="checkbox-toggle">
-                                <label for="checkbox-toggle">Menu</label>
-                                <ul class="h-top-menu">
-                                    <li><a href="#">new</a></li>
-                                    <li><a href="#">designers</a></li>
-                                    <li><a href="#">women</a></li>
-                                    <li><a href="#">men</a></li>
-                                    <li><a href="#">clearence</a></li>
-                                </ul>
-                            </nav>
-                            <div class="cart">
-                                <ul>
-                                    <li><a href="#">Your cart</a></li>
-                                    <li class="cart-items"><span>0 items</span> | <span>$ 0</span></li>
-                                </ul>
-                            </div>
+                        <div class="right-nav">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="slider">
-            <div class="slider-content">
-                <ul>
-                    <li class="slide">
-                        <img src="img/slider.jpg" alt="123">
-                        <a href="#" class="next">next</a>
-                        <a href="#" class="prev">prev</a>
-                        <button class="slider-btn btn">shop now</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="slider-dots">
-                <form action="#">
-                    <label for="radio1"></label><input id="radio1" type="radio" name="o">
-                    <label for="radio2"></label><input id="radio2" type="radio" name="o" checked>
-                    <label for="radio3"></label><input id="radio3" type="radio" name="o">
-                    <label for="radio4"></label><input id="radio4" type="radio" name="o">
-                    <label for="radio5"></label><input id="radio5" type="radio" name="o">
-                </form>
-            </div>
-        </section>
-        <section class="main-contacts">
-            <div class="wrapper">
-                <div class="contacts-wrap">
-                    <div class="subscribe">
-                        <h3>Stay updated</h3>
-                        <form action="#">
-                            <input type="email" placeholder="Your email address">
-                            <input type="submit" value="+">
-                        </form>
-                    </div>
-                    <div class="find-us">
-                        <h3>Find us here</h3>
-                        <ul>
-                            <li class="fb"><a href="#"></a></li>
-                            <li class="tw"><a href="#"></a></li>
-                            <li class="pi"><a href="#"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="banners">
-            <div class="wrapper">
-                <div class="banner-img">
-                    <img src="img/banner.jpg" alt="33">
-                    <button class="banner-btn">shop now</button>
-                </div>
-            </div>
-        </section>
-        <section class="shop">
-            <div class="wrapper">
-                <div class="shop-nav">
-                    <div class="left-nav">
-                        <ul>
-                            <li><a href="#">what’s hot?</a></li>
-                            <li><a href="#">designers</a></li>
-                            <li><a href="#">featured</a></li>
-                            <li><a href="#">latest</a></li>
-                        </ul>
-                    </div>
-                    <div class="right-nav">
-                        <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="shop-main-content">
-                <div class="shop-content">
-                    <ul>
-                        <li>
-                            <div class="shop-item ">
-                                <div class="shop-image">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="shop-item">
-                                <div class="shop-image">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="shop-item ">
-                                <div class="shop-image shop-item-sale">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="shop-item nohover">
-                                <div class="shop-image shop-item-nohover">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="shop-item ">
-                                <div class="shop-image shop-item-sale">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="shop-item">
-                                <div class="shop-image shop-item-sale">
-                                    <img src="img/w.jpeg" alt="123">
-                                </div>
-                                <div class="shop-item-info">
-                                    <h3>Feel tank</h3>
-                                    <p>$59.95</p>
-                                    <button class="shop-btn">
-                       add to cart
-                   </button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="load-more">Load more</button>
-                </div>
-            </div>
-        </section>
-        <section class="clearance">
-            <div class="wrapper">
-                <div class="clearance-content">
-                    <div class="clearance-img">
-                        <img src="img/clearance.png" alt="qwe"></div>
-                </div>
-                <div class="shop-clearance">
-                    <div class="shop-clearance-content">
+                <div class="shop-main-content">
+                    <div class="shop-content">
                         <ul>
                             <li>
                                 <div class="shop-item ">
@@ -247,11 +162,36 @@
                             </li>
                             <li>
                                 <div class="shop-item">
+                                    <div class="shop-image">
+                                        <img src="img/w.jpeg" alt="123">
+                                    </div>
+                                    <div class="shop-item-info">
+                                        <h3>Feel tank</h3>
+                                        <p>$59.95</p>
+                                        <button class="shop-btn">
+                       add to cart
+                   </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shop-item ">
                                     <div class="shop-image shop-item-sale">
-                                       <picture>
-                                        <source srcset="img/bag.png" media="(max-width: 640px)">
                                         <img src="img/w.jpeg" alt="123">
-                                        </picture>
+                                    </div>
+                                    <div class="shop-item-info">
+                                        <h3>Feel tank</h3>
+                                        <p>$59.95</p>
+                                        <button class="shop-btn">
+                       add to cart
+                   </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shop-item nohover">
+                                    <div class="shop-image shop-item-nohover">
+                                        <img src="img/w.jpeg" alt="123">
                                     </div>
                                     <div class="shop-item-info">
                                         <h3>Feel tank</h3>
@@ -264,11 +204,8 @@
                             </li>
                             <li>
                                 <div class="shop-item ">
-                                    <div class="shop-image ">
-                                       <picture>
-                                        <source srcset="img/bag.png" media="(max-width: 640px)">
+                                    <div class="shop-image shop-item-sale">
                                         <img src="img/w.jpeg" alt="123">
-                                        </picture>
                                     </div>
                                     <div class="shop-item-info">
                                         <h3>Feel tank</h3>
@@ -280,7 +217,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="shop-item ">
+                                <div class="shop-item">
                                     <div class="shop-image shop-item-sale">
                                         <img src="img/w.jpeg" alt="123">
                                     </div>
@@ -294,140 +231,220 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                    <button class="load-more">Load more</button>
-                </div>
-            </div>
-        </section>
-        <section class="brands">
-            <div class="wrapper">
-                <div class="brands-content">
-                    <h2>favourite brands</h2>
-                    <ul>
-                        <li class="brand-img b-addict"><a href="#"></a></li>
-                        <li class="brand-img b-abandon"><a href="#"></a></li>
-                        <li class="brand-img b-adidas"><a href="#"></a></li>
-                        <li class="brand-img b-london"><a href="#"></a></li>
-                        <li class="brand-img b-converse"><a href="#"></a></li>
-                        <li class="brand-img b-klein"><a href="#"></a></li>
-                        <li class="brand-img b-edwin"><a href="#"></a></li>
-                        <li class="brand-img b-grenson"><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="wrapper">
-                <div class="about-text">
-                    <h2>About LookShop</h2>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
-                </div>
-            </div>
-        </section>
-        <section class="payment">
-            <div class="wrapper">
-                <div class="pay-items">
-                    <h4>We accept</h4>
-                    <ul>
-                        <li><a href="#" class="visa"></a></li>
-                        <li><a href="#" class="mc"></a></li>
-                        <li><a href="#" class="paypal"></a></li>
-                        <li><a href="#" class="ae"></a></li>
-                        <li><a href="#" class="visa-e"></a></li>
-                        <li><a href="#" class="laser"></a></li>
-                        <li><a href="#" class="maestro"></a></li>
-                        <li><a href="#" class="delta"></a></li>
-                        <li><a href="#" class="solo"></a></li>
-                        <li><a href="#" class="idea"></a></li>
-                        <li><a href="#" class="dk"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="footer">
-            <div class="footer-top">
-                <div class="wrapper">
-                    <div class="footer-top-wrap">
-                       <div class="footer-top-left">
-                        <div class="cutomer-service">
-                            <h3>Customer Service</h3>
-                            <ul>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Terms of payment</a></li>
-                                <li><a href="#">Terms of sale</a></li>
-                                <li><a href="#">Delivery terms and conditions</a></li>
-                                <li><a href="#">Returns and Rfunds</a></li>
-                            </ul>
-                        </div>
-                        <div class="information">
-                            <h3>Information</h3>
-                            <ul>
-                                <li><a href="#">Affiliate</a></li>
-                                <li><a href="#">Cookies</a></li>
-                                <li><a href="#">How to Shop</a></li>
-                                <li><a href="#">About Nelly</a></li>
-                                <li><a href="#">Investor relations</a></li>
-                            </ul>
-                        </div>
-                        <div class="campaigns">
-                            <h3>Campaigns</h3>
-                            <ul>
-                                <li><a href="#">Evening dresses</a></li>
-                                <li><a href="#">Makeup</a></li>
-                                <li><a href="#">Fashion forward</a></li>
-                                <li><a href="#">training clothes</a></li>
-                                <li><a href="#">Special Occasion Dresses</a></li>
-                            </ul>
-                        </div>
-                        <div class="stores">
-                            <h3>Stores</h3>
-                            <ul>
-                                <li><a href="#">Paris</a></li>
-                                <li><a href="#">New York</a></li>
-                                <li><a href="#">London</a></li>
-                                <li><a href="#">Madrid</a></li>
-                                <li><a href="#">Tokio</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="footer-top-right">
-                        <div class="social">
-                            <h3>Social</h3>
-                            <ul>
-                                <li class="s-tw"><a href="#"></a></li>
-                                <li class="s-pi"><a href="#"></a></li>
-                                <li class="s-fb"><a href="#"></a></li>
-                                <li class="s-g"><a href="#"></a></li>
-                                <li class="s-t"><a href="#"></a></li>
-                                <li class="s-v"><a href="#"></a></li>
-                            </ul>
-                        </div>
-                        <div class="secured-img">
-                            <img src="img/100.png" alt="qwrt">
-                        </div>
-                        </div>
+                        <button class="load-more">Load more</button>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bot">
+            </section>
+            <section class="clearance">
                 <div class="wrapper">
-                    <div class="footer-bot-wrap">
+                    <div class="clearance-content">
+                        <div class="clearance-img">
+                            <img src="img/clearance.png" alt="qwe"></div>
+                    </div>
+                    <div class="shop-clearance">
+                        <div class="shop-clearance-content">
+                            <ul>
+                                <li>
+                                    <div class="shop-item ">
+                                        <div class="shop-image">
+                                            <img src="img/w.jpeg" alt="123">
+                                        </div>
+                                        <div class="shop-item-info">
+                                            <h3>Feel tank</h3>
+                                            <p>$59.95</p>
+                                            <button class="shop-btn">
+                       add to cart
+                   </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="shop-item">
+                                        <div class="shop-image shop-item-sale">
+                                            <picture>
+                                                <source srcset="img/bag.png" media="(max-width: 640px)">
+                                                <img src="img/w.jpeg" alt="123">
+                                            </picture>
+                                        </div>
+                                        <div class="shop-item-info">
+                                            <h3>Feel tank</h3>
+                                            <p>$59.95</p>
+                                            <button class="shop-btn">
+                       add to cart
+                   </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="shop-item ">
+                                        <div class="shop-image ">
+                                            <picture>
+                                                <source srcset="img/bag.png" media="(max-width: 640px)">
+                                                <img src="img/w.jpeg" alt="123">
+                                            </picture>
+                                        </div>
+                                        <div class="shop-item-info">
+                                            <h3>Feel tank</h3>
+                                            <p>$59.95</p>
+                                            <button class="shop-btn">
+                       add to cart
+                   </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="shop-item ">
+                                        <div class="shop-image shop-item-sale">
+                                            <img src="img/w.jpeg" alt="123">
+                                        </div>
+                                        <div class="shop-item-info">
+                                            <h3>Feel tank</h3>
+                                            <p>$59.95</p>
+                                            <button class="shop-btn">
+                       add to cart
+                   </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="load-more">Load more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="brands">
+                <div class="wrapper">
+                    <div class="brands-content">
+                        <h2>favourite brands</h2>
                         <ul>
-                            <li><a href="#">Privacy & Cookies</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                            <li><a href="#">Store Directory</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li class="brand-img b-addict"><a href="#"></a></li>
+                            <li class="brand-img b-abandon"><a href="#"></a></li>
+                            <li class="brand-img b-adidas"><a href="#"></a></li>
+                            <li class="brand-img b-london"><a href="#"></a></li>
+                            <li class="brand-img b-converse"><a href="#"></a></li>
+                            <li class="brand-img b-klein"><a href="#"></a></li>
+                            <li class="brand-img b-edwin"><a href="#"></a></li>
+                            <li class="brand-img b-grenson"><a href="#"></a></li>
                         </ul>
-                        <span><a href="#">© LookShop.com
-                        </a><br>All Rights Reserved</span>
                     </div>
                 </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+            <section class="about">
+                <div class="wrapper">
+                    <div class="about-text">
+                        <h2>About LookShop</h2>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="payment">
+                <div class="wrapper">
+                    <div class="pay-items">
+                        <h4>We accept</h4>
+                        <ul>
+                            <li><a href="#" class="visa"></a></li>
+                            <li><a href="#" class="mc"></a></li>
+                            <li><a href="#" class="paypal"></a></li>
+                            <li><a href="#" class="ae"></a></li>
+                            <li><a href="#" class="visa-e"></a></li>
+                            <li><a href="#" class="laser"></a></li>
+                            <li><a href="#" class="maestro"></a></li>
+                            <li><a href="#" class="delta"></a></li>
+                            <li><a href="#" class="solo"></a></li>
+                            <li><a href="#" class="idea"></a></li>
+                            <li><a href="#" class="dk"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer">
+                <div class="footer-top">
+                    <div class="wrapper">
+                        <div class="footer-top-wrap">
+                            <div class="footer-top-left">
+                                <div class="cutomer-service">
+                                    <h3>Customer Service</h3>
+                                    <ul>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Terms of payment</a></li>
+                                        <li><a href="#">Terms of sale</a></li>
+                                        <li><a href="#">Delivery terms and conditions</a></li>
+                                        <li><a href="#">Returns and Rfunds</a></li>
+                                    </ul>
+                                </div>
+                                <div class="information">
+                                    <h3>Information</h3>
+                                    <ul>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">Cookies</a></li>
+                                        <li><a href="#">How to Shop</a></li>
+                                        <li><a href="#">About Nelly</a></li>
+                                        <li><a href="#">Investor relations</a></li>
+                                    </ul>
+                                </div>
+                                <div class="campaigns">
+                                    <h3>Campaigns</h3>
+                                    <ul>
+                                        <li><a href="#">Evening dresses</a></li>
+                                        <li><a href="#">Makeup</a></li>
+                                        <li><a href="#">Fashion forward</a></li>
+                                        <li><a href="#">training clothes</a></li>
+                                        <li><a href="#">Special Occasion Dresses</a></li>
+                                    </ul>
+                                </div>
+                                <div class="stores">
+                                    <h3>Stores</h3>
+                                    <ul>
+                                        <li><a href="#">Paris</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">London</a></li>
+                                        <li><a href="#">Madrid</a></li>
+                                        <li><a href="#">Tokio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-top-right">
+                                <div class="social">
+                                    <h3>Social</h3>
+                                    <ul>
+                                        <li class="s-tw"><a href="#"></a></li>
+                                        <li class="s-pi"><a href="#"></a></li>
+                                        <li class="s-fb"><a href="#"></a></li>
+                                        <li class="s-g"><a href="#"></a></li>
+                                        <li class="s-t"><a href="#"></a></li>
+                                        <li class="s-v"><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="secured-img">
+                                    <img src="img/100.png" alt="qwrt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bot">
+                    <div class="wrapper">
+                        <div class="footer-bot-wrap">
+                            <ul class="footer-nav">
+                                <li class="nav-item"><a href="#">Privacy & Cookies</a></li>
+                                <li class="nav-item"><a href="#">Terms & Conditions</a></li>
+                                <li class="nav-item"><a href="#">Accessibility</a></li>
+                                <li class="nav-item"><a href="#">Store Directory</a></li>
+                                <li class="nav-item"><a href="#">About Us</a></li>
+                            </ul>
+                            <label for="nav-trigger"></label>
+                            <span><a href="#">© LookShop.com
+                        </a><br>All Rights Reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
 </body>
+
 </html>

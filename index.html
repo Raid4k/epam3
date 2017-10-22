@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -36,8 +34,10 @@
                             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
                         </div>
                         <div class="nav-cart">
-                            <nav class="navigation">
-                                <ul>
+                            <nav class="navigation dropdown">
+                                <input type="checkbox" id="checkbox-toggle">
+                                <label for="checkbox-toggle">Menu</label>
+                                <ul class="h-top-menu">
                                     <li><a href="#">new</a></li>
                                     <li><a href="#">designers</a></li>
                                     <li><a href="#">women</a></li>
@@ -339,6 +339,7 @@
             <div class="footer-top">
                 <div class="wrapper">
                     <div class="footer-top-wrap">
+                       <div class="footer-top-left">
                         <div class="cutomer-service">
                             <h3>Customer Service</h3>
                             <ul>
@@ -380,6 +381,8 @@
                                 <li><a href="#">Tokio</a></li>
                             </ul>
                         </div>
+                        </div>
+                        <div class="footer-top-right">
                         <div class="social">
                             <h3>Social</h3>
                             <ul>
@@ -393,6 +396,7 @@
                         </div>
                         <div class="secured-img">
                             <img src="img/100.png" alt="qwrt">
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -415,5 +419,4 @@
         </section>
     </footer>
 </body>
-
 </html>
